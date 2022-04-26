@@ -1,0 +1,25 @@
+.title a {
+  color: #111;
+  background-image: linear-gradient(transparent 36%, rgb(204, 242, 241) 40%);
+  /* background-position: initial; */
+  /* background-color: initial; */
+  transition: background-position 120ms ease-in-out 0s,
+    padding 120ms ease-in-out 0s;
+  background-size: 100% 220%;
+}
+
+.container {
+  padding: 3em;
+}
+
+.num {
+  color: #0070f3;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  padding: 2px 0;
+  background-color: rgb(204, 242, 241);
+  border-radius: 0.25rem;
+}
