@@ -12,7 +12,14 @@ function Fetch({ stars }: { stars: number }) {
       <div className={Styles.container}>
         <div className={Styles.main}>
           <h1 className={Styles.title}>Fetch</h1>
-          <p>Arrow function & Promise method &darr;</p>
+          <h3>
+            Source &rarr;{" "}
+            <a href="https://github.com/vercel/next.js" className={Styles.code}>
+              {"https://github.com/vercel/next.js"}
+            </a>
+          </h3>
+          <p>Arrow function {"&"} Promise method &darr;</p>
+
           <div className={Styles.cardBox}>
             <h1>
               Next.js has <b className={Styles.num}>{stars}</b> ⭐️

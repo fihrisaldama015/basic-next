@@ -5,11 +5,12 @@ import Navigation from "../components/navigation";
 
 interface PreactStarsProps {
   stars: number;
-  network: number;
+  fork: number;
 }
 
 function PreactStars(props: PreactStarsProps) {
-  const { stars, network } = props;
+  const { stars, fork } = props;
+  console.log(stars, fork);
   return (
     <div>
       <Head>
@@ -17,13 +18,26 @@ function PreactStars(props: PreactStarsProps) {
       </Head>
       <div className={Styles.container}>
         <div className={Styles.main}>
-          <h1 className={Styles.title}>Fetch Method 2</h1>
-          <p>Classic Function & Async Await method &darr;</p>
+          <h1 className={Styles.title}>Fetch</h1>
+          <h3>
+            Source &rarr;{" "}
+            <a
+              href="https://github.com/preactjs/preact"
+              className={Styles.code}
+            >
+              {"https://github.com/preactjs/preact"}
+            </a>
+          </h3>
+          <p>
+            Method 2 &rarr; Classic Function {"&"} Async Await method &darr;
+          </p>
           <div className={Styles.cardBox}>
             <h1>
               Preact has <b className={Styles.num}>{stars}</b> ⭐
             </h1>
-            <h1>Preact has {network} network count</h1>
+            <h1>
+              Forked <b className={Styles.num}>{fork}</b> times
+            </h1>
             <div>
               <Link href="/fetch">
                 <a className={Styles.underlined}>
@@ -41,12 +55,12 @@ function PreactStars(props: PreactStarsProps) {
 
 export async function getStaticProps() {
   const res = await fetch("https://api.github.com/repos/preactjs/preact");
-  const json = await res.json();
+  const data = await res.json();
 
   return {
     props: {
-      stars: json.stargazers_count,
-      network: json.network_count,
+      stars: data.stargazers_count,
+      fork: data.forks,
     },
   };
 }

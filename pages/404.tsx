@@ -1,5 +1,6 @@
 import router from "next/router";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 import s from "../styles/Home.module.css";
 
 const Custom_404 = () => {
@@ -20,6 +21,10 @@ const Custom_404 = () => {
 
   return (
     <div className={s.container}>
+      <Head>
+        <title>404 Page Not Found</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={s.main} style={{ fontSize: "2em" }}>
         {content == "" ? (
           <p>

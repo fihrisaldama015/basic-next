@@ -57,10 +57,7 @@ function User(props: userProps) {
         </p>
         <div className={s.cardBox}>
           <p>
-            Click <code className={s.code}>GO</code> to see
-            <code className={s.code}>
-              <b>user detail</b>
-            </code>{" "}
+            Click <code className={s.code}>GO</code> to see <b>user detail</b>{" "}
             Pages !
           </p>
           <form>
@@ -79,6 +76,11 @@ function User(props: userProps) {
             <p>Username that has the ID &darr;&darr;</p>
             <h1>{name}</h1>
           </form>
+          <Link href="/staticFetch" passHref>
+            <div className={s.title}>
+              <a style={{ fontSize: "1.5rem" }}>Go to All User Data Page</a>
+            </div>
+          </Link>
         </div>
         <Navigation />
       </div>

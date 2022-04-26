@@ -12,6 +12,42 @@
   align-items: center;
 }
 
+.hero {
+  width: 100vw;
+  padding: 2em 6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4em;
+  color: #0a1a3d;
+}
+
+.hero .title {
+  font-size: calc(3em + 2.5vw);
+}
+
+.hero .name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.hero .detail {
+  margin: 3em 0;
+}
+
+.hero .info {
+  max-width: 50ch;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.under {
+  background-size: 1px 1em;
+  box-shadow: inset 0 -0.175em #0070f387;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -88,7 +124,7 @@
 
 .submit {
   background-color: #0070f3;
-  color: #fafafa;
+  color: #fff;
   margin: 0 1em;
   font-weight: bold;
   padding: 0.5em 1em;
@@ -101,7 +137,8 @@
 }
 .submit:hover:enabled {
   cursor: pointer;
-  background-color: #88f3;
+  /* background-color: #88f3; */
+  background-color: #4285f422;
 }
 .submit:disabled {
   filter: grayscale(1);
@@ -127,12 +164,15 @@
 }
 
 .code {
-  background: #fafafa;
-  border-radius: 5px;
+  /* background: #fafafa; */
+  background-color: #f1f1f1;
+  border-radius: 0.5em;
   padding: 0.75rem;
+  box-shadow: 2px 2px 0px #0002;
+  line-height: 2.5;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Source Code Pro, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
@@ -178,7 +218,11 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
+  .hero {
+    flex-direction: column;
+    padding: 1em 3em;
+  }
   .grid {
     width: 100%;
     flex-direction: column;

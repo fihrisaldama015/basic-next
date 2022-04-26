@@ -15,14 +15,10 @@ function Navigation() {
         </Link>
         <Link href="/fetch">
           <a className={styles.card}>
-            <h2>Page 1 &rarr;</h2>
-            <p>Page for API Fetch.</p>
-          </a>
-        </Link>
-        <Link href="/stars">
-          <a className={styles.card}>
-            <h2>Stars &rarr;</h2>
-            <p>Another API.</p>
+            <h2>Fetch &rarr;</h2>
+            <p>
+              Page for API, Fetching Stars count data from github repository.
+            </p>
           </a>
         </Link>
         <Link href="/404">

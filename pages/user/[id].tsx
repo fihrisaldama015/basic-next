@@ -27,15 +27,13 @@ function UserDetail(props: userProps) {
         <h1 className={s.title}>Hi !, {user.name}</h1>
         <p>
           The value of the user below is from routes url after user &rarr;{" "}
-          <code className={s.code}>
-            user/${"{"}
-            <b>?</b>
-            {"}"}
-          </code> 
-          fill with <b>user ID{`'`}s</b>
+          <code className={s.code}>user/ID</code>
         </p>
         <div className={s.grid}>
-          <div className={s.cardBox}>
+          <div
+            className={s.cardBox}
+            style={{ flexDirection: "row", flexWrap: "wrap" }}
+          >
             <div className={s.card}>
               <h1>Email :</h1>
               <p>{user.email}</p>
