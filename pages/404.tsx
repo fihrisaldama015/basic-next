@@ -31,9 +31,12 @@ const Custom_404 = () => {
       </Head>
       <div className={s.main} style={{ fontSize: "2em" }}>
         {content == "" ? (
-          <p>
-            <b>404</b> | This is Custom Pages
-          </p>
+          <>
+            <p>
+              <b>404</b> | This is Custom Pages
+            </p>
+            <p>poe gummmm</p>
+          </>
         ) : (
           <p>{content}</p>
         )}
