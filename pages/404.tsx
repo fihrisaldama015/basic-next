@@ -35,7 +35,6 @@ const Custom_404 = () => {
             <p>
               <b>404</b> | This is Custom Pages
             </p>
-            <p>poe gummmm</p>
           </>
         ) : (
           <p>{content}</p>

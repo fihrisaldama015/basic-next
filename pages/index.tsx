@@ -17,6 +17,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div className={styles.hero}>
           <div>
+            <p style={{ marginBottom: "0px", opacity: "0.8" }}>26 April 2022</p>
             <h1 className={styles.title} style={{ textAlign: "left" }}>
               Welcome to <a href="">Home!</a>
             </h1>
@@ -25,15 +26,13 @@ const Home: NextPage = () => {
               <p className={styles.info}>
                 This is my learning progress, still learning the several basic
                 of{" "}
-                {/* <span
-                  style={{
-                    backgroundSize: "1px 1em",
-                    boxShadow:
-                      "inset 0 -0.175em white, inset 0 -0.3em #0070f387",
-                  }}
-                > */}
-                <span className={styles.under}>Next.js</span> Technologies. I
-                make this when I have free time between college activities
+                <span className={styles.under}>
+                  <a href="https://nextjs.org/" target="blank">
+                    Next.js
+                  </a>
+                </span>{" "}
+                Technologies. I make this when I have free time between college
+                activities
               </p>
             </div>
           </div>

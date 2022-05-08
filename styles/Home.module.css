@@ -39,7 +39,7 @@
 
 .hero .info {
   max-width: 50ch;
-  opacity: 0.8;
+  opacity: 0.9;
   font-size: 18px;
 }
 
@@ -79,6 +79,10 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+}
+
+.title h1 {
+  font-weight: 900;
 }
 
 .title,
